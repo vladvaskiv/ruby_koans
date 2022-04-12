@@ -14,12 +14,10 @@
 #   about_triangle_project_2.rb
 #
 def triangle(a, b, c)
-
   case
   when a <= 0 || b <= 0 || c <= 0 then raise TriangleError, "One or more sides are equal 0"
   when a + b <= c || a + c <= b || b + c <= a then raise TriangleError, " Sum of 2 sides less than 3rd"
   end
-
 
   case
   when a == b && a == c then :equilateral
